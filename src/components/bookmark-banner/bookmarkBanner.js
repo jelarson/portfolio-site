@@ -37,12 +37,21 @@ const triangleRightCss = css`
   border-top: 50px solid white;
   border-left: 50px solid transparent;
 `
+const linkDivCss = css`
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 const linksCss = css`
   width: 50px;
   height: 50px;
   background-color: black;
   border-radius: 50%;
   cursor: pointer;
+  transition: 0.15s ease-in-out;
 
   &:hover {
     width: 65px;
@@ -54,9 +63,15 @@ export default function BookmarkBanner() {
   return (
     <div css={bookmarkWrapperCss}>
       <div css={blockCss}>
-        <div css={linksCss} />
-        <div css={linksCss} />
-        <div css={linksCss} />
+        <div css={linkDivCss}>
+          <div css={linksCss} />
+        </div>
+        <div css={linkDivCss}>
+          <div css={linksCss} />
+        </div>
+        <div css={linkDivCss}>
+          <div css={linksCss} />
+        </div>
       </div>
       <div css={triangleWrapperCss}>
         <div css={triangleLeftCss} />
