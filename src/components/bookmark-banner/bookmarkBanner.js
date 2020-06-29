@@ -105,19 +105,19 @@ export default function BookmarkBanner() {
             <FontAwesomeIcon icon="home" />
           </div>
         </div>
-        <div style={{ color: hoverOne ? 'black' : 'white' }}>Home</div>
+        <div style={{ color: hoverOne ? 'black' : 'white', fontFamily: "'Heebo', sans-serif" }}>Home</div>
         <div css={linkDivCss}>
           <div css={linksCss} onMouseEnter={() => hoverOn(2)} onMouseLeave={() => hoverOff(2)}>
             <FontAwesomeIcon icon="code-branch" />
           </div>
         </div>
-        <div style={{ color: hoverTwo ? 'black' : 'white' }}>Projects</div>
+        <div style={{ color: hoverTwo ? 'black' : 'white', fontFamily: "'Heebo', sans-serif" }}>Projects</div>
         <div css={linkDivCss}>
           <div css={linksCss} onMouseEnter={() => hoverOn(3)} onMouseLeave={() => hoverOff(3)}>
             <FontAwesomeIcon icon="user-tie" />
           </div>
         </div>
-        <div style={{ color: hoverThree ? 'black' : 'white' }}>About Me</div>
+        <div style={{ color: hoverThree ? 'black' : 'white', fontFamily: "'Heebo', sans-serif" }}>About Me</div>
       </div>
       <div css={triangleWrapperCss}>
         <div css={triangleLeftCss} />
