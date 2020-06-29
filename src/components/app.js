@@ -1,9 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Global, css } from '@emotion/core'
-// import { library } from "@fortawesome/fontawesome-svg-core";
-import { FortAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faTrash, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 
 import { UserProvider } from './context/context'
 import Home from './home/home'

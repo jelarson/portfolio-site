@@ -1,6 +1,5 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import { FortAwesomeIcon, FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
 
@@ -43,10 +42,7 @@ export default function Home() {
   return (
     <div css={homeWrapperCss}>
       <div css={homeHeaderCss}>
-        <div>
-          Hello From Home Header
-          <FontAwesomeIcon icon="home" />
-        </div>
+        <div>Hello From Home Header</div>
       </div>
       <div css={homeContentCss}>Hello From Home Content</div>
       <BookmarkBanner />
