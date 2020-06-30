@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { css } from '@emotion/core'
+import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const bookmarkWrapperCss = css`
@@ -60,6 +61,8 @@ const linksCss = css`
   transition: 0.15s ease-in-out;
   color: white;
   text-align: center;
+  outline: none;
+  border: none;
 
   &:hover {
     width: 65px;
@@ -68,7 +71,7 @@ const linksCss = css`
   }
 `
 
-export default function BookmarkBanner() {
+export default function BookmarkBanner(props) {
   const [hoverOne, setHoverOne] = useState(false)
   const [hoverTwo, setHoverTwo] = useState(false)
   const [hoverThree, setHoverThree] = useState(false)
@@ -101,21 +104,43 @@ export default function BookmarkBanner() {
     <div css={bookmarkWrapperCss}>
       <div css={blockCss}>
         <div css={linkDivCss}>
-          <div css={linksCss} onMouseEnter={() => hoverOn(1)} onMouseLeave={() => hoverOff(1)}>
+          <NavLink
+            css={linksCss}
+            type="button"
+            exact
+            to="/"
+            onMouseEnter={() => hoverOn(1)}
+            onMouseLeave={() => hoverOff(1)}
+            activeStyle={{ color: 'red' }}
+          >
             <FontAwesomeIcon icon="home" />
-          </div>
+          </NavLink>
         </div>
         <div style={{ color: hoverOne ? 'black' : 'white', fontFamily: "'Heebo', sans-serif" }}>Home</div>
         <div css={linkDivCss}>
-          <div css={linksCss} onMouseEnter={() => hoverOn(2)} onMouseLeave={() => hoverOff(2)}>
+          <NavLink
+            css={linksCss}
+            type="button"
+            to="/projects"
+            onMouseEnter={() => hoverOn(2)}
+            onMouseLeave={() => hoverOff(2)}
+            activeStyle={{ color: 'red' }}
+          >
             <FontAwesomeIcon icon="code-branch" />
-          </div>
+          </NavLink>
         </div>
         <div style={{ color: hoverTwo ? 'black' : 'white', fontFamily: "'Heebo', sans-serif" }}>Projects</div>
         <div css={linkDivCss}>
-          <div css={linksCss} onMouseEnter={() => hoverOn(3)} onMouseLeave={() => hoverOff(3)}>
+          <NavLink
+            css={linksCss}
+            type="button"
+            to="/about"
+            onMouseEnter={() => hoverOn(3)}
+            onMouseLeave={() => hoverOff(3)}
+            activeStyle={{ color: 'red' }}
+          >
             <FontAwesomeIcon icon="user-tie" />
-          </div>
+          </NavLink>
         </div>
         <div style={{ color: hoverThree ? 'black' : 'white', fontFamily: "'Heebo', sans-serif" }}>About Me</div>
       </div>

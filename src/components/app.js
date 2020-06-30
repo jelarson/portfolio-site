@@ -4,6 +4,8 @@ import { Global, css } from '@emotion/core'
 
 import { UserProvider } from './context/context'
 import Home from './home/home'
+import Projects from './projects/projects'
+import About from './about/about'
 import Icons from './icons/icons'
 
 export default function App() {
@@ -23,6 +25,8 @@ export default function App() {
           <div className="app-wrapper">
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/projects" component={Projects} />
             </Switch>
           </div>
         </Router>

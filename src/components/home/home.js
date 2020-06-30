@@ -2,6 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 
 import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
+import ProfileImage from '../profile-image/profileImage'
 
 const homeWrapperCss = css`
   position: relative;
@@ -33,19 +34,14 @@ const homeContentCss = css`
   font-family: 'Heebo', sans-serif;
   margin-top: 60px;
   margin-left: 140px;
-
-  img {
-    object-fit: cover;
-  object-position: 48% 0;
-
-  width: 150px;
-  height: 220px;
-  margin-right: 20px;
-  }
 `
 const headerCss = css`
   font-family: 'Heebo', sans-serif;
   font-size: 2.4em;
+`
+
+const homeMessageCss = css`
+  width: 300px;
 `
 
 export default function Home() {
@@ -55,16 +51,11 @@ export default function Home() {
         <div css={headerCss}>Hey There!</div>
       </div>
       <div css={homeContentCss}>
-        <img
-          src="https://media-exp1.licdn.com/dms/image/C4E03AQHpP7vIiF6fug/profile-displayphoto-shrink_200_200/0?e=1599091200&v=beta&t=GwR5UCdI4qblbK0x1zJZSkrG3M96QKuBlRmlVF50Dg0"
-          alt="ProfileImage"
-        />
-        <div>
+        <ProfileImage />
+        <div css={homeMessageCss}>
           My Name is Jess Larson. <br />
-          <br /> I'm a Web Developer who has graduated from <br /> the Bottega Full-Stack Developer program in
-          <br /> May of 2020. Feel free to click around the
-          <br /> navigation bar to learn more about me and see
-          <br /> some of my work!
+          <br /> I'm a Web Developer who has graduated from the Bottega Full-Stack Developer program in May of 2020.
+          Feel free to click around the navigation bar to learn more about me and see some of my work!
         </div>
       </div>
       <BookmarkBanner />
