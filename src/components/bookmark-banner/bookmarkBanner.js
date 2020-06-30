@@ -3,6 +3,8 @@ import { css } from '@emotion/core'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import BookmarkLink from './bookmarkLink'
+
 const bookmarkWrapperCss = css`
   display: flex;
   flex-direction: column;
@@ -18,6 +20,8 @@ const blockCss = css`
   height: 300px;
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
   align-items: center;
   justify-content: space-around;
 `
@@ -39,110 +43,14 @@ const triangleRightCss = css`
   border-top: 50px solid white;
   border-left: 50px solid transparent;
 `
-const linkDivCss = css`
-  width: 90px;
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`
 
-const linksCss = css`
-  width: 50px;
-  height: 50px;
-  background-color: black;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 0.15s ease-in-out;
-  color: white;
-  text-align: center;
-  outline: none;
-  border: none;
-
-  &:hover {
-    width: 65px;
-    height: 65px;
-    font-size: 1.3em;
-  }
-`
-
-export default function BookmarkBanner(props) {
-  const [hoverOne, setHoverOne] = useState(false)
-  const [hoverTwo, setHoverTwo] = useState(false)
-  const [hoverThree, setHoverThree] = useState(false)
-
-  function hoverOn(num) {
-    if (num === 1) {
-      setHoverOne(true)
-    }
-    if (num === 2) {
-      setHoverTwo(true)
-    }
-    if (num === 3) {
-      setHoverThree(true)
-    }
-  }
-
-  function hoverOff(num) {
-    if (num === 1) {
-      setHoverOne(false)
-    }
-    if (num === 2) {
-      setHoverTwo(false)
-    }
-    if (num === 3) {
-      setHoverThree(false)
-    }
-  }
-
+export default function BookmarkBanner() {
   return (
     <div css={bookmarkWrapperCss}>
       <div css={blockCss}>
-        <div css={linkDivCss}>
-          <NavLink
-            css={linksCss}
-            type="button"
-            exact
-            to="/"
-            onMouseEnter={() => hoverOn(1)}
-            onMouseLeave={() => hoverOff(1)}
-            activeStyle={{ color: 'red' }}
-          >
-            <FontAwesomeIcon icon="home" />
-          </NavLink>
-        </div>
-        <div style={{ color: hoverOne ? 'black' : 'white', fontFamily: "'Heebo', sans-serif" }}>Home</div>
-        <div css={linkDivCss}>
-          <NavLink
-            css={linksCss}
-            type="button"
-            to="/projects"
-            onMouseEnter={() => hoverOn(2)}
-            onMouseLeave={() => hoverOff(2)}
-            activeStyle={{ color: 'red' }}
-          >
-            <FontAwesomeIcon icon="code-branch" />
-          </NavLink>
-        </div>
-        <div style={{ color: hoverTwo ? 'black' : 'white', fontFamily: "'Heebo', sans-serif" }}>Projects</div>
-        <div css={linkDivCss}>
-          <NavLink
-            css={linksCss}
-            type="button"
-            to="/about"
-            onMouseEnter={() => hoverOn(3)}
-            onMouseLeave={() => hoverOff(3)}
-            activeStyle={{ color: 'red' }}
-          >
-            <FontAwesomeIcon icon="user-tie" />
-          </NavLink>
-        </div>
-        <div style={{ color: hoverThree ? 'black' : 'white', fontFamily: "'Heebo', sans-serif" }}>About Me</div>
+        <BookmarkLink destination="/" faIcon="home" number="1" name="Home" />
+        <BookmarkLink destination="/projects" faIcon="code-branch" number="2" name="Projects" />
+        <BookmarkLink destination="/about" faIcon="user-tie" number="3" name="About Me" />
       </div>
       <div css={triangleWrapperCss}>
         <div css={triangleLeftCss} />
