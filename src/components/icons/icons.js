@@ -9,6 +9,7 @@ import {
   faMapMarkedAlt,
   faLock,
   faHome,
+  faMobileAlt,
   faCodeBranch,
   faUserTie,
 } from '@fortawesome/free-solid-svg-icons'
@@ -26,6 +27,7 @@ const Icons = () => {
     faMapMarkedAlt,
     faLock,
     faHome,
+    faMobileAlt,
     faCodeBranch,
     faUserTie
   )

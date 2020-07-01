@@ -58,7 +58,7 @@ export default function About() {
       <div css={aboutContentCss}>
         <div css={contentSectionWrapperCss}>
           <h3>Bio:</h3>
-          My name is Jess E Larson. In my free time, I enjoy spending time with my beautiful wife and out 8 month old
+          My name is Jess E Larson. In my free time, I enjoy spending time with my beautiful wife and our 8 month old
           daughter. I also enjoy watching and talking about movies, sports, and of course coding.
         </div>
         <div css={contentSectionWrapperCss}>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
 import ProfileImage from '../profile-image/profileImage'
@@ -43,6 +44,10 @@ const headerCss = css`
 const homeMessageCss = css`
   width: 300px;
 `
+const contactInfoCss = css`
+  color: white;
+  font-family: 'Heebo', sans-serif;
+`
 
 export default function Home() {
   return (
@@ -56,6 +61,12 @@ export default function Home() {
           My Name is Jess Larson. <br />
           <br /> I'm a Web Developer who has graduated from the Bottega Full-Stack Developer program in May of 2020.
           Feel free to click around the navigation bar to learn more about me and see some of my work!
+          <div css={contactInfoCss}>
+            <h3>Contact Information</h3>
+            <FontAwesomeIcon icon="envelope" /> Email: jesslarson93@gmail.com
+            <br />
+            <FontAwesomeIcon icon="phone" /> Mobile: 801-360-6273
+          </div>
         </div>
       </div>
       <BookmarkBanner />
