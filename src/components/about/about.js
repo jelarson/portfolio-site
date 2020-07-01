@@ -38,7 +38,7 @@ const aboutContentCss = css`
   justify-content: center;
   align-items: flex-start;
   font-family: 'Heebo', sans-serif;
-  font-size: 0.9em;
+  font-size: 0.87em;
 `
 
 const contentSectionWrapperCss = css`
@@ -88,7 +88,7 @@ export default function About() {
           </ul>
         </div>
       </div>
-      <ProfileImage />
+      {/* <ProfileImage /> */}
       <BookmarkBanner />
     </div>
   )

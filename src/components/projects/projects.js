@@ -2,6 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 
 import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
+import Project from './project'
 
 const projectPageWrapperCss = css`
   position: relative;
@@ -33,6 +34,11 @@ export default function Projects() {
     <div css={projectPageWrapperCss}>
       <div css={projectsHeaderCss}>
         <div css={projectsHeaderTitleCss}>Projects</div>
+      </div>
+      <div>
+        <Project />
+        <Project />
+        <Project />
       </div>
       <BookmarkBanner />
     </div>
