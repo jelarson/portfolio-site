@@ -47,6 +47,16 @@ const homeMessageCss = css`
 const contactInfoCss = css`
   color: white;
   font-family: 'Heebo', sans-serif;
+
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      color: grey;
+    }
+  }
 `
 
 export default function Home() {
@@ -66,6 +76,11 @@ export default function Home() {
             <FontAwesomeIcon icon="envelope" /> Email: jesslarson93@gmail.com
             <br />
             <FontAwesomeIcon icon="phone" /> Mobile: 801-360-6273
+            <br />
+            <a href="https://www.linkedin.com/in/jess-e-larson/">
+              <FontAwesomeIcon icon={['fab', 'linkedin']} />
+              {'  '}Click Here to visit my LinkedIn Profile
+            </a>
           </div>
         </div>
       </div>

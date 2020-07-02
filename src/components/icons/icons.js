@@ -11,6 +11,7 @@ import {
   faHome,
   faMobileAlt,
   faCodeBranch,
+  // faLinkedin,
   faUserTie,
 } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -28,6 +29,8 @@ const Icons = () => {
     faLock,
     faHome,
     faMobileAlt,
+    // faLinkedin,
+    // faGithub,
     faCodeBranch,
     faUserTie
   )

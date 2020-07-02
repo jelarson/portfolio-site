@@ -7,9 +7,11 @@ import Home from './home/home'
 import Projects from './projects/projects'
 import About from './about/about'
 import Icons from './icons/icons'
+import BrandIcons from './icons/brandIcons'
 
 export default function App() {
   Icons()
+  BrandIcons()
 
   return (
     <div className="app">
