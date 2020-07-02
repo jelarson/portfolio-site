@@ -21,6 +21,7 @@ export default function App() {
             styles={css`
               body {
                 margin: 0;
+                padding: 0;
               }
             `}
           />

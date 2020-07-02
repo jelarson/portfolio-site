@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const projectWrapperCss = css`
   display: flex;
@@ -10,32 +11,57 @@ const projectWrapperCss = css`
   color: white;
   font-family: 'Heebo', sans-serif;
   margin-bottom: 25px;
+  border-bottom: 2px white solid;
 `
 const projectImageCss = css`
   width: 100px;
   height: 100px;
-  background-color: white;
+  // background-color: white;
   margin-right: 15px;
   margin-left: 10px;
-  color: black;
+  // color: black;
+  img {
+    width: 100px;
+    height: 100px;
+  }
 `
 const projectContentCss = css`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      color: #a2a2a2;
+    }
+  }
 `
 
 export default function Project(props) {
   return (
     <div css={projectWrapperCss}>
-      <div css={projectImageCss}>Placeholder Image</div>
+      <div css={projectImageCss}>
+        <img src={props.projectImage} />
+      </div>
       <div css={projectContentCss}>
-        <div>Project Title Placeholder</div>
+        <div>{props.projectTitle}</div>
         Project Description Project Description Project Description Project Description
         <br />
-        GitHub link: link Placeholder
-        <br />
-        Heroku link: link placeholder
+        <a href={props.gitHubLinkFront}>
+          <FontAwesomeIcon icon={['fab', 'github']} /> GitHub Front-End Repository
+        </a>
+        {props.gitHubLinkBack.length > 1 ? (
+          <a href={props.gitHubLinkBack}>
+            <FontAwesomeIcon icon={['fab', 'github']} />
+            GitHub Back-End Repository
+          </a>
+        ) : null}
+        {/* <br /> */}
+        {props.herokuLink.length > 1 ? <a href={props.herokuLink}>Heroku Link</a> : null}
       </div>
     </div>
   )

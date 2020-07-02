@@ -11,7 +11,11 @@ const aboutPageWrapperCss = css`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to right, black, grey);
+  // background-image: linear-gradient(to right, black, grey);
+  background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
 `
 
 const aboutHeaderCss = css`
@@ -88,7 +92,7 @@ export default function About() {
           </ul>
         </div>
       </div>
-      {/* <ProfileImage /> */}
+      <ProfileImage />
       <BookmarkBanner />
     </div>
   )
