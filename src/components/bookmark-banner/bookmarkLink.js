@@ -53,7 +53,7 @@ export default function BookmarkLink(props) {
     if (number === '3') {
       setHoverNumber(hoverThree)
     }
-  }, [number])
+  }, [hoverOne, hoverTwo, hoverThree, number])
 
   function hoverOn(num) {
     if (num === '1') {
