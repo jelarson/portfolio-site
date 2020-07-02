@@ -42,26 +42,31 @@ const projectContentCss = css`
 `
 
 export default function Project(props) {
+  const { herokuLink, gitHubLinkFront, gitHubLinkBack, projectTitle, projectImage } = props
   return (
     <div css={projectWrapperCss}>
       <div css={projectImageCss}>
-        <img src={props.projectImage} />
+        <img src={projectImage} alt="Project Logo" />
       </div>
       <div css={projectContentCss}>
-        <div>{props.projectTitle}</div>
+        <div>{projectTitle}</div>
         Project Description Project Description Project Description Project Description
         <br />
-        <a href={props.gitHubLinkFront}>
+        <a href={gitHubLinkFront} rel="noreferrer" target="_blank">
           <FontAwesomeIcon icon={['fab', 'github']} /> GitHub Front-End Repository
         </a>
-        {props.gitHubLinkBack.length > 1 ? (
-          <a href={props.gitHubLinkBack}>
+        {gitHubLinkBack.length > 1 ? (
+          <a href={gitHubLinkBack} rel="noreferrer" target="_blank">
             <FontAwesomeIcon icon={['fab', 'github']} />
             GitHub Back-End Repository
           </a>
         ) : null}
         {/* <br /> */}
-        {props.herokuLink.length > 1 ? <a href={props.herokuLink}>Heroku Link</a> : null}
+        {herokuLink.length > 1 ? (
+          <a href={herokuLink} rel="noreferrer" target="_blank">
+            Heroku Link
+          </a>
+        ) : null}
       </div>
     </div>
   )
