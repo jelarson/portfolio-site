@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
 import ProfileImage from '../profile-image/profileImage'
 import TechQuotes from '../tech-quotes/techQuotes'
+import Footer from '../footer/footer'
 
 const homeWrapperCss = css`
   position: relative;
@@ -100,6 +101,7 @@ export default function Home() {
         </div>
       </div>
       <TechQuotes />
+      <Footer />
       <BookmarkBanner />
     </div>
   )

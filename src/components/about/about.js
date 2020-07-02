@@ -5,6 +5,7 @@ import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
 // import ProfileImage from '../profile-image/profileImage'
 import LanguageLogo from './languageLogo'
 import TechQuotes from '../tech-quotes/techQuotes'
+import Footer from '../footer/footer'
 
 const aboutPageWrapperCss = css`
   position: relative;
@@ -51,6 +52,7 @@ const contentSectionWrapperCss = css`
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
+  font-size: 1.3em;
   flex-direction: column;
   margin-bottom: 15px;
 `
@@ -119,6 +121,7 @@ export default function About() {
       </div>
       {/* <ProfileImage /> */}
       <TechQuotes />
+      <Footer />
       <BookmarkBanner />
     </div>
   )
