@@ -3,6 +3,7 @@ import { css } from '@emotion/core'
 
 import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
 import Project from './project'
+import TechQuotes from '../tech-quotes/techQuotes'
 
 const projectPageWrapperCss = css`
   position: relative;
@@ -83,6 +84,7 @@ export default function Projects() {
           projectImage="https://source.unsplash.com/random"
         />
       </div>
+      <TechQuotes />
       <BookmarkBanner />
     </div>
   )

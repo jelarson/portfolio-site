@@ -4,6 +4,7 @@ import { css } from '@emotion/core'
 import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
 // import ProfileImage from '../profile-image/profileImage'
 import LanguageLogo from './languageLogo'
+import TechQuotes from '../tech-quotes/techQuotes'
 
 const aboutPageWrapperCss = css`
   position: relative;
@@ -83,12 +84,12 @@ export default function About() {
           <h2>Bio:</h2>
           My name is Jess E Larson. In my free time, I enjoy spending time with my beautiful wife and our 8 month old
           daughter. I also enjoy watching and talking about movies, sports, and of course coding. I hold a Bachelor
-          degree in Business Management with a minor in Finance. In that field, I didn't always care for the
+          degree in Business Management with a minor in Finance. In that field, I didn&apos;t always care for the
           environment. I had a friend who suggested I look into coding, and I have not looked back or had any regrets
           since.
         </div>
         <div css={toolboxSectionWrapperCss}>
-          <h2>What's in my toolbox?</h2>
+          <h2>What&apos;s in my toolbox?</h2>
           <div css={languageLogoCss}>
             <LanguageLogo languageTitle="HTML5" logoUrl="https://i.ya-webdesign.com/images/html-5-logo-png-19.png" />
             <LanguageLogo
@@ -113,10 +114,11 @@ export default function About() {
               logoUrl="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png"
             />
           </div>
-          <h2>More coming soon!</h2>
+          <h1>More coming soon!</h1>
         </div>
       </div>
       {/* <ProfileImage /> */}
+      <TechQuotes />
       <BookmarkBanner />
     </div>
   )

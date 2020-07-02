@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
 import ProfileImage from '../profile-image/profileImage'
+import TechQuotes from '../tech-quotes/techQuotes'
 
 const homeWrapperCss = css`
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,8 +83,8 @@ export default function Home() {
           <ProfileImage />
           <div css={homeMessageCss}>
             My Name is Jess Larson. <br />
-            <br /> I'm a Web Developer who has graduated from the Bottega Full-Stack Developer program in May of 2020.
-            Please feel welcome to click around the navigation bar to learn more about me and see some of my work!
+            <br /> I&apos;m a Web Developer who has graduated from the Bottega Full-Stack Developer program in May of
+            2020. Please feel welcome to click around the navigation bar to learn more about me and see some of my work!
           </div>
         </div>
         <h3>Feel free to reach out to me with any opportunities or ideas</h3>
@@ -98,6 +99,7 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <TechQuotes />
       <BookmarkBanner />
     </div>
   )
