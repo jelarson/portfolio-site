@@ -3,6 +3,7 @@ import { css } from '@emotion/core'
 
 import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
 import ProfileImage from '../profile-image/profileImage'
+import LanguageLogo from './languageLogo'
 
 const aboutPageWrapperCss = css`
   position: relative;
@@ -52,6 +53,24 @@ const contentSectionWrapperCss = css`
   flex-direction: column;
   margin-bottom: 15px;
 `
+const toolboxSectionWrapperCss = css`
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+
+const languageLogoCss = css`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 15px;
+`
 
 export default function About() {
   return (
@@ -61,38 +80,43 @@ export default function About() {
       </div>
       <div css={aboutContentCss}>
         <div css={contentSectionWrapperCss}>
-          <h3>Bio:</h3>
+          <h2>Bio:</h2>
           My name is Jess E Larson. In my free time, I enjoy spending time with my beautiful wife and our 8 month old
-          daughter. I also enjoy watching and talking about movies, sports, and of course coding.
+          daughter. I also enjoy watching and talking about movies, sports, and of course coding. I hold a Bachelor
+          degree in Business Management with a minor in Finance. In that field, I didn't always care for the
+          environment. I had a friend who suggested I look into coding, and I haven't looked back or had any regrets
+          since.
         </div>
-        <div css={contentSectionWrapperCss}>
-          <h3>Coding Languages:</h3>I have experience with the following coding languages:
-          <ul>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Python</li>
-            <li>HTML5</li>
-            <li>CSS/SCSS</li>
-          </ul>
-        </div>
-        <div css={contentSectionWrapperCss}>
-          <h3>Education:</h3>
-          <ul>
-            <li>
-              Bottega - Full-Stack Developer Program <br /> February 2020 - May 2020
-            </li>
-            <li>
-              Utah Valley University - Bachelor Degree in Business Management, minor in Finance <br /> September 2015 -
-              December 2018
-            </li>
-            <li>
-              {' '}
-              Snow College - Associate Degree in Science <br /> September 2014 - May 2015
-            </li>
-          </ul>
+        <div css={toolboxSectionWrapperCss}>
+          <h2>What's in my toolbox?</h2>
+          <div css={languageLogoCss}>
+            <LanguageLogo languageTitle="HTML5" logoUrl="https://i.ya-webdesign.com/images/html-5-logo-png-19.png" />
+            <LanguageLogo
+              languageTitle="CSS / SCSS"
+              logoUrl="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png"
+            />
+            <LanguageLogo
+              languageTitle="React"
+              logoUrl="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+            />
+            <LanguageLogo
+              languageTitle="JavaScript"
+              logoUrl="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            />
+            <LanguageLogo
+              languageTitle="Python3"
+              logoUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"
+            />
+            <LanguageLogo languageTitle="Git" logoUrl="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" />
+            <LanguageLogo
+              languageTitle="Heroku"
+              logoUrl="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png"
+            />
+          </div>
+          <h2>More coming soon!</h2>
         </div>
       </div>
-      <ProfileImage />
+      {/* <ProfileImage /> */}
       <BookmarkBanner />
     </div>
   )
