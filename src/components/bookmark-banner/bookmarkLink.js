@@ -41,17 +41,19 @@ export default function BookmarkLink(props) {
   const [hoverThree, setHoverThree] = useState(false)
   const [hoverNumber, setHoverNumber] = useState(false)
 
+  const { destination, faIcon, number, name } = props
+
   useEffect(() => {
-    if (props.number === '1') {
+    if (number === '1') {
       setHoverNumber(hoverOne)
     }
-    if (props.number === '2') {
+    if (number === '2') {
       setHoverNumber(hoverTwo)
     }
-    if (props.number === '3') {
+    if (number === '3') {
       setHoverNumber(hoverThree)
     }
-  })
+  }, [number])
 
   function hoverOn(num) {
     if (num === '1') {
@@ -83,17 +85,15 @@ export default function BookmarkLink(props) {
         <NavLink
           css={linksCss}
           exact
-          to={props.destination}
-          onMouseEnter={() => hoverOn(props.number)}
-          onMouseLeave={() => hoverOff(props.number)}
+          to={destination}
+          onMouseEnter={() => hoverOn(number)}
+          onMouseLeave={() => hoverOff(number)}
           activeStyle={{ color: 'red' }}
         >
-          <FontAwesomeIcon icon={props.faIcon} />
+          <FontAwesomeIcon icon={faIcon} />
         </NavLink>
       </div>
-      <div style={{ visibility: hoverNumber ? 'visible' : 'hidden', fontFamily: "'Heebo', sans-serif" }}>
-        {props.name}
-      </div>
+      <div style={{ visibility: hoverNumber ? 'visible' : 'hidden', fontFamily: "'Heebo', sans-serif" }}>{name}</div>
     </div>
   )
 }
