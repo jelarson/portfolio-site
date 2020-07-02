@@ -12,7 +12,11 @@ const homeWrapperCss = css`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to right, black, grey);
+  // background-image: linear-gradient(to right, black, grey);
+  background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `
 const homeHeaderCss = css`
   width: calc(100% - 140px);
@@ -54,7 +58,7 @@ const contactInfoCss = css`
     cursor: pointer;
 
     &:hover {
-      color: grey;
+      color: #a2a2a2;
     }
   }
 `
@@ -77,7 +81,7 @@ export default function Home() {
             <br />
             <FontAwesomeIcon icon="phone" /> Mobile: 801-360-6273
             <br />
-            <a href="https://www.linkedin.com/in/jess-e-larson/">
+            <a href="https://www.linkedin.com/in/jess-e-larson/" rel="noreferrer" target="_blank">
               <FontAwesomeIcon icon={['fab', 'linkedin']} />
               {'  '}Click Here to visit my LinkedIn Profile
             </a>
