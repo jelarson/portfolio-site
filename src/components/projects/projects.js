@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
 import Project from './project'
@@ -35,11 +36,38 @@ const projectsHeaderTitleCss = css`
   font-size: 2.4em;
 `
 
+const projectLinkCss = css`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 140px;
+  margin-bottom: 20px;
+  width: calc(100% - 140px);
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 5px;
+    background-color: black;
+
+    &:hover {
+      color: red;
+    }
+  }
+`
+
 export default function Projects() {
   return (
     <div css={projectPageWrapperCss}>
       <div css={projectsHeaderCss}>
         <div css={projectsHeaderTitleCss}>Projects</div>
+      </div>
+      <div css={projectLinkCss}>
+        <a href="https://github.com/jelarson" rel="noreferrer" target="_blank">
+          <FontAwesomeIcon icon={['fab', 'github']} />
+          Visit my GitHub Profile
+        </a>
       </div>
       <div>
         <Project
