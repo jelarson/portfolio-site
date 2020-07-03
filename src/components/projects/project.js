@@ -11,6 +11,7 @@ const projectWrapperCss = css`
   color: white;
   font-family: 'Heebo', sans-serif;
   margin-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 2px white solid;
 `
 const projectImageCss = css`
@@ -42,7 +43,7 @@ const projectContentCss = css`
 `
 
 export default function Project(props) {
-  const { herokuLink, gitHubLinkFront, gitHubLinkBack, projectTitle, projectImage } = props
+  const { herokuLink, gitHubLinkFront, gitHubLinkBack, projectTitle, projectImage, projectDescription } = props
   return (
     <div css={projectWrapperCss}>
       <div css={projectImageCss}>
@@ -50,7 +51,7 @@ export default function Project(props) {
       </div>
       <div css={projectContentCss}>
         <div>{projectTitle}</div>
-        Project Description Project Description Project Description Project Description
+        {projectDescription}
         <br />
         <a href={gitHubLinkFront} rel="noreferrer" target="_blank">
           <FontAwesomeIcon icon={['fab', 'github']} /> GitHub Front-End Repository

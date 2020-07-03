@@ -43,39 +43,44 @@ export default function Projects() {
       </div>
       <div>
         <Project
-          herokuLink="www.google.com"
-          gitHubLinkFront="www.github.com"
-          gitHubLinkBack="www.github.com"
-          projectTitle="Project #1"
-          projectImage="https://source.unsplash.com/random"
+          herokuLink="N"
+          gitHubLinkFront="https://github.com/jelarson/Code-War-Challenges"
+          gitHubLinkBack="N"
+          projectTitle="Code War Challenges"
+          projectImage="https://shankxwebdev.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-28-at-7.51.42-AM.png"
+          projectDescription="Various challenges/Kata from the codewars.com website written in JavaScript. Demonstrating a knowledge of manipulating data types and writing practical and efficient functions."
         />
         <Project
-          herokuLink="www.google.com"
-          gitHubLinkFront="www.github.com"
-          gitHubLinkBack="www.github.com"
-          projectTitle="Project #2"
-          projectImage="https://source.unsplash.com/random"
+          herokuLink="https://jel-connect-four.herokuapp.com/"
+          gitHubLinkFront="https://github.com/jelarson/connect-four"
+          gitHubLinkBack="https://github.com/jelarson/connect-four-high-scores"
+          projectTitle="Connect Four"
+          projectImage="https://www.logolynx.com/images/logolynx/eb/eb2e7f908cf6e0d06eda647651ec8eb8.jpeg"
+          projectDescription="A recreation of the classic game, Connect Four. React front-end that demonstrates a knowledge of context to keep track of a player's turn. A Flask database holds the highscores for the players. Can be played against another player or the computer - which randomizes its turn."
         />
         <Project
-          herokuLink="www.google.com"
-          gitHubLinkFront="www.github.com"
-          gitHubLinkBack="www.github.com"
-          projectTitle="Project #3"
-          projectImage="https://source.unsplash.com/random"
+          herokuLink="https://jel-costco-text-adventure.herokuapp.com/"
+          gitHubLinkFront="https://github.com/jelarson/text-adventure-front"
+          gitHubLinkBack="https://github.com/jelarson/text-adventure-backend"
+          projectTitle="Choose Your Adventure Game"
+          projectImage="https://helpguide.co/wp-content/uploads/2017/06/Costco-Logo.jpg"
+          projectDescription="A classic 'Choose Your Own Adventure' game where you make your way through the hostile world of Costco. React front-end that uses props to keep track of a player's stats from one page to the next. Flask back-end that holds the story options and results."
         />
         <Project
-          herokuLink="www.google.com"
-          gitHubLinkFront="www.github.com"
-          gitHubLinkBack="www.github.com"
-          projectTitle="Project #4"
-          projectImage="https://source.unsplash.com/random"
+          herokuLink="N"
+          gitHubLinkFront="https://github.com/jelarson/Diner-Menu---js"
+          gitHubLinkBack="N"
+          projectTitle="Diner Menu"
+          projectImage="https://res.cloudinary.com/tf-lab/image/upload/w_656,h_368,c_fill,g_auto:subject,q_auto,f_auto/restaurant/0201b3ad-49ef-488d-ba52-d91ddf30b0c0/14e96376-9b49-43c9-94ca-c276a802c33d.jpg"
+          projectDescription="A Diner webpage written in pure HTML and SCSS. Breakfast, lunch, and dinner menus are only accessible during certain times of the day. Running receipt total is stored and displayed on checkout."
         />
         <Project
-          herokuLink="www.google.com"
-          gitHubLinkFront="www.github.com"
-          gitHubLinkBack="www.github.com"
-          projectTitle="Project #5"
-          projectImage="https://source.unsplash.com/random"
+          herokuLink="N"
+          gitHubLinkFront="https://github.com/jelarson/react-widgets-2.0"
+          gitHubLinkBack="N"
+          projectTitle="Widget Webpage"
+          projectImage="https://i.pinimg.com/originals/2c/8a/c0/2c8ac0d3152f3ab93a8e124fe9409953.jpg"
+          projectDescription="An interactice webpage that has has various widgets that the user can interact with."
         />
         <Project
           herokuLink="www.google.com"
@@ -83,6 +88,7 @@ export default function Projects() {
           gitHubLinkBack="www.github.com"
           projectTitle="Project #6"
           projectImage="https://source.unsplash.com/random"
+          projectDescription="I am the product description. Hear me roar!"
         />
       </div>
       <TechQuotes />
