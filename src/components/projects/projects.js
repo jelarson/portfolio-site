@@ -82,14 +82,14 @@ export default function Projects() {
           projectImage="https://i.pinimg.com/originals/2c/8a/c0/2c8ac0d3152f3ab93a8e124fe9409953.jpg"
           projectDescription="An interactice webpage that has has various widgets that the user can interact with."
         />
-        <Project
+        {/* <Project
           herokuLink="www.google.com"
           gitHubLinkFront="www.github.com"
           gitHubLinkBack="www.github.com"
           projectTitle="Project #6"
           projectImage="https://source.unsplash.com/random"
           projectDescription="I am the product description. Hear me roar!"
-        />
+        /> */}
       </div>
       <TechQuotes />
       <Footer />

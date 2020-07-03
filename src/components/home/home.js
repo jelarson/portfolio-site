@@ -57,6 +57,9 @@ const headerCss = css`
 
 const homeMessageCss = css`
   width: 300px;
+  span {
+    font-size: 1.3em;
+  }
 `
 const contactInfoCss = css`
   color: white;
@@ -83,7 +86,8 @@ export default function Home() {
         <div css={welcomeWrapperCss}>
           <ProfileImage />
           <div css={homeMessageCss}>
-            My Name is Jess Larson. <br />
+            <span>My Name is Jess Larson.</span>
+            <br />
             <br /> I&apos;m a Web Developer who has graduated from the Bottega Full-Stack Developer program in May of
             2020. Please feel welcome to click around the navigation bar to learn more about me and see some of my work!
           </div>
