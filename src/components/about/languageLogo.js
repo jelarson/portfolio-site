@@ -5,6 +5,13 @@ const logoWrapperCss = css`
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @media (max-width: 545px) {
+    font-size: 0.8em;
+  }
+  @media (max-width: 445px) {
+    font-size: 0.6em;
+  }
 `
 const logoImageContainerCss = css`
   height: 150px;
@@ -12,6 +19,19 @@ const logoImageContainerCss = css`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 800px) {
+    height: 120px;
+    width: 120px;
+  }
+  @media (max-width: 680px) {
+    height: 80px;
+    width: 80px;
+  }
+  @media (max-width: 515px) {
+    height: 55px;
+    width: 55px;
+  }
 
   img {
     max-width: 100%;

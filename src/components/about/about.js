@@ -34,6 +34,12 @@ const aboutHeaderCss = css`
 const aboutHeaderTitleCss = css`
   font-family: 'Heebo', sans-serif;
   font-size: 2.4em;
+  @media (max-width: 460px) {
+    font-size: 2.1em;
+  }
+  @media (max-width: 300px) {
+    font-size: 1.7em;
+  }
 `
 
 const aboutContentCss = css`
@@ -55,6 +61,13 @@ const contentSectionWrapperCss = css`
   font-size: 1.3em;
   flex-direction: column;
   margin-bottom: 15px;
+  @media (max-width: 570px) {
+    font-size: 1em;
+  }
+  @media (max-width: 350px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 `
 const toolboxSectionWrapperCss = css`
   margin-top: 40px;
@@ -64,6 +77,11 @@ const toolboxSectionWrapperCss = css`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+
+  @media (max-width: 350px) {
+    font-size: 0.8em;
+  }
 `
 
 const languageLogoCss = css`
@@ -73,6 +91,13 @@ const languageLogoCss = css`
   align-items: center;
   justify-items: center;
   margin-bottom: 15px;
+
+  @media (max-width: 420px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 340px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `
 
 export default function About() {

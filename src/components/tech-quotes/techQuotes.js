@@ -6,15 +6,30 @@ const quoteCss = css`
   margin-left: 140px;
   margin-top: 50px;
   margin-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
   color: white;
   font-size: 2.4em;
   font-family: 'Heebo', sans-serif;
   text-align: center;
+  @media (max-width: 600px) {
+    font-size: 2em;
+  }
+  @media (max-width: 525px) {
+    font-size: 1.6em;
+  }
+  @media (max-width: 470px) {
+    font-size: 1.3em;
+  }
+  @media (max-width: 410px) {
+    font-size: 0.8em;
+  }
 `
 const authorCss = css`
   width: 95%;
   display: flex;
   justify-content: flex-end;
+  padding-right: 10px;
 `
 
 export default function TechQuotes() {
