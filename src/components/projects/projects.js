@@ -110,6 +110,14 @@ export default function Projects() {
           projectImage="https://i.pinimg.com/originals/2c/8a/c0/2c8ac0d3152f3ab93a8e124fe9409953.jpg"
           projectDescription="An interactice webpage that has has various widgets that the user can interact with."
         />
+        <Project
+          herokuLink="N"
+          gitHubLinkFront="https://github.com/jelarson/react-widgets-2.0"
+          gitHubLinkBack="N"
+          projectTitle="Portfolio"
+          projectImage="https://static.thenounproject.com/png/140738-200.png"
+          projectDescription="This webpage was built with React and the Emotion Library. Carefully constructed the components to be as versatile as possible to allow for change and additional projects to be added."
+        />
         {/* <Project
           herokuLink="www.google.com"
           gitHubLinkFront="www.github.com"
