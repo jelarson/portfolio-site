@@ -80,6 +80,13 @@ export default function Projects() {
           projectDescription="Various challenges/Kata from the codewars.com website written in JavaScript. Demonstrating a knowledge of manipulating data types and writing practical and efficient functions."
         />
         <Project
+          herokuLink="https://jel-sudoku.herokuapp.com/"
+          gitHubLinkFront="https://github.com/jelarson/sudoku"
+          projectTitle="Sudoku"
+          projectImage="https://mysudokusociety.com/wp-content/uploads/2016/08/logo-puzzle2.jpg"
+          projectDescription="My version of a sudoku puzzle. Built in React. Utilizes emotions library and the Dynamic-React-Timer. Errors, correct answers, and whether the number is currently selected will change the element styles."
+        />
+        <Project
           herokuLink="https://jel-connect-four.herokuapp.com/"
           gitHubLinkFront="https://github.com/jelarson/connect-four"
           gitHubLinkBack="https://github.com/jelarson/connect-four-high-scores"
