@@ -9,7 +9,7 @@ import Footer from '../footer/footer'
 
 const aboutPageWrapperCss = css`
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;

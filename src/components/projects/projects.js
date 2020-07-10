@@ -9,7 +9,7 @@ import Footer from '../footer/footer'
 
 const projectPageWrapperCss = css`
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -45,6 +45,7 @@ const projectLinkCss = css`
   width: calc(100% - 140px);
 
   a {
+    border-radius: 8px;
     color: white;
     text-decoration: none;
     font-size: 1.3em;

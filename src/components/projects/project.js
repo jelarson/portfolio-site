@@ -22,6 +22,7 @@ const projectImageCss = css`
   margin-left: 10px;
   // color: black;
   img {
+    border-radius: 8px;
     width: 100px;
     height: 100px;
   }
@@ -41,6 +42,9 @@ const projectContentCss = css`
     }
   }
 `
+const projectDescCss = css`
+  margin-bottom: 5px;
+`
 
 export default function Project(props) {
   const { herokuLink, gitHubLinkFront, gitHubLinkBack, projectTitle, projectImage, projectDescription } = props
@@ -51,7 +55,7 @@ export default function Project(props) {
       </div>
       <div css={projectContentCss}>
         <div>{projectTitle}</div>
-        {projectDescription}
+        <div css={projectDescCss}>{projectDescription}</div>
         <br />
         <a href={gitHubLinkFront} rel="noreferrer" target="_blank">
           <FontAwesomeIcon icon={['fab', 'github']} /> GitHub Front-End Repository
