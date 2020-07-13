@@ -23,13 +23,17 @@ export default function App() {
 )`,
         backgroundRepeat: 'repeat-y',
         backgroundPosition: 'center',
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
       }}
     >
       <UserProvider>
         <Router>
           <Global
             styles={css`
+              html {
+                margin: 0;
+                width: 100vw;
+              }
               body {
                 margin: 0;
                 padding: 0;
