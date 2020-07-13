@@ -14,7 +14,18 @@ export default function App() {
   BrandIcons()
 
   return (
-    <div className="app">
+    <div
+      className="app"
+      style={{
+        width: '100%',
+        backgroundImage: `url(
+  'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'
+)`,
+        backgroundRepeat: 'repeat-y',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+      }}
+    >
       <UserProvider>
         <Router>
           <Global
