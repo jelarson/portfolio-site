@@ -8,6 +8,7 @@ import Projects from './projects/projects'
 import About from './about/about'
 import Icons from './icons/icons'
 import BrandIcons from './icons/brandIcons'
+import WoodBG from '../../static/assets/woodbackground.jpg'
 
 export default function App() {
   Icons()
@@ -18,9 +19,10 @@ export default function App() {
       className="app"
       style={{
         width: '100%',
-        backgroundImage: `url(
-  'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'
-)`,
+        backgroundImage: `url(${WoodBG})`,
+        //         backgroundImage: `url(
+        //   'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'
+        // )`,
         backgroundRepeat: 'repeat-y',
         backgroundPosition: 'center',
         backgroundSize: 'contain',
