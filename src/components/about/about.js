@@ -6,6 +6,13 @@ import BookmarkBanner from '../bookmark-banner/bookmarkBanner'
 import LanguageLogo from './languageLogo'
 import TechQuotes from '../tech-quotes/techQuotes'
 import Footer from '../footer/footer'
+import htmlLogo from '../../../static/assets/htmllogo.png'
+import scssLogo from '../../../static/assets/scsslogo.png'
+import reactLogo from '../../../static/assets/reactlogo.png'
+import jsLogo from '../../../static/assets/jslogo.png'
+import pythonLogo from '../../../static/assets/pythonlogo.png'
+import gitLogo from '../../../static/assets/gitlogo.png'
+import herokuLogo from '../../../static/assets/herokulogo.jpg'
 
 const aboutPageWrapperCss = css`
   position: relative;
@@ -119,27 +126,34 @@ export default function About() {
         <div css={toolboxSectionWrapperCss}>
           <h2>What&apos;s in my toolbox?</h2>
           <div css={languageLogoCss}>
-            <LanguageLogo languageTitle="HTML5" logoUrl="https://i.ya-webdesign.com/images/html-5-logo-png-19.png" />
+            <LanguageLogo languageTitle="HTML5" logoUrl={htmlLogo} />
+            {/* <LanguageLogo languageTitle="HTML5" logoUrl="https://i.ya-webdesign.com/images/html-5-logo-png-19.png" /> */}
             <LanguageLogo
               languageTitle="CSS / SCSS"
-              logoUrl="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png"
+              logoUrl={scssLogo}
+              // logoUrl="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png"
             />
             <LanguageLogo
               languageTitle="React"
-              logoUrl="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+              logoUrl={reactLogo}
+              // logoUrl="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
             />
             <LanguageLogo
               languageTitle="JavaScript"
-              logoUrl="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              logoUrl={jsLogo}
+              // logoUrl="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
             />
             <LanguageLogo
               languageTitle="Python3"
-              logoUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"
+              logoUrl={pythonLogo}
+              // logoUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"
             />
-            <LanguageLogo languageTitle="Git" logoUrl="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" />
+            <LanguageLogo languageTitle="Git" logoUrl={gitLogo} />
+            {/* <LanguageLogo languageTitle="Git" logoUrl="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" /> */}
             <LanguageLogo
               languageTitle="Heroku"
-              logoUrl="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png"
+              logoUrl={herokuLogo}
+              // logoUrl="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png"
             />
           </div>
           <h1>More coming soon!</h1>

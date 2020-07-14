@@ -34,7 +34,7 @@ export default function App() {
             styles={css`
               html {
                 margin: 0;
-                width: 100vw;
+                width: 100%;
               }
               body {
                 margin: 0;
