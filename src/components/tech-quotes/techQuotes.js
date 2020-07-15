@@ -4,7 +4,7 @@ import { css } from '@emotion/core'
 const quoteCss = css`
   width: 75%;
   margin-left: 140px;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 50px;
   padding-right: 10px;
   padding-left: 10px;

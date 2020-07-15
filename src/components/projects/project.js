@@ -31,6 +31,7 @@ const projectContentCss = css`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 15px;
 
   a {
     text-decoration: none;
@@ -42,6 +43,12 @@ const projectContentCss = css`
     }
   }
 `
+const projectTitleCss = css`
+  font-size: 1.4em;
+  margin-bottom: 5px;
+  text-decoration: underline;
+`
+
 const projectDescCss = css`
   margin-bottom: 5px;
 `
@@ -54,22 +61,23 @@ export default function Project(props) {
         <img src={projectImage} alt="Project Logo" />
       </div>
       <div css={projectContentCss}>
-        <div>{projectTitle}</div>
+        <div css={projectTitleCss}>{projectTitle}</div>
         <div css={projectDescCss}>{projectDescription}</div>
         <br />
         <a href={gitHubLinkFront} rel="noreferrer" target="_blank">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <FontAwesomeIcon icon={['fab', 'github']} /> GitHub Front-End Repository
         </a>
         {gitHubLinkBack.length > 1 ? (
           <a href={gitHubLinkBack} rel="noreferrer" target="_blank">
-            <FontAwesomeIcon icon={['fab', 'github']} />
-            GitHub Back-End Repository
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <FontAwesomeIcon icon={['fab', 'github']} /> GitHub Back-End Repository
           </a>
         ) : null}
         {/* <br /> */}
         {herokuLink.length > 1 ? (
           <a href={herokuLink} rel="noreferrer" target="_blank">
-            Heroku Link
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Heroku Link
           </a>
         ) : null}
       </div>

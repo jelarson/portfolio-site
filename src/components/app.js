@@ -23,7 +23,7 @@ export default function App() {
         //         backgroundImage: `url(
         //   'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'
         // )`,
-        backgroundRepeat: 'repeat-y',
+        backgroundRepeat: 'round',
         backgroundPosition: 'center',
         backgroundSize: 'contain',
       }}
