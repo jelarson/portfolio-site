@@ -14,7 +14,7 @@ import folderLogo from '../../../static/assets/folder.jpg'
 import hammerLogo from '../../../static/assets/hammer.jpg'
 import sudokuLogo from '../../../static/assets/sudokulogo.jpg'
 import fOneLogo from '../../../static/assets/f1logo.png'
-import glassdoorLogo from '../../../static/assets/glassdoorLogo.jpg'
+import glassdoorLogo from '../../../static/assets/glassdoorlogo.jpg'
 
 const projectPageWrapperCss = css`
   position: relative;
