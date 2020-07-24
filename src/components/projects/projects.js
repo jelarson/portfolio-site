@@ -13,6 +13,7 @@ import dinerLogo from '../../../static/assets/diner.jpg'
 import folderLogo from '../../../static/assets/folder.jpg'
 import hammerLogo from '../../../static/assets/hammer.jpg'
 import sudokuLogo from '../../../static/assets/sudokulogo.jpg'
+import fOneLogo from '../../../static/assets/f1logo.png'
 
 const projectPageWrapperCss = css`
   position: relative;
@@ -132,6 +133,15 @@ export default function Projects() {
           projectImage={hammerLogo}
           // projectImage="https://i.pinimg.com/originals/2c/8a/c0/2c8ac0d3152f3ab93a8e124fe9409953.jpg"
           projectDescription="An interactice webpage that has has various widgets that the user can interact with."
+        />
+        <Project
+          herokuLink="https://jel-f1driver-cards.herokuapp.com/"
+          gitHubLinkFront="https://github.com/jelarson/material-ui"
+          gitHubLinkBack="N"
+          projectTitle="Material UI - F1 Driver Cards"
+          projectImage={fOneLogo}
+          // projectImage="https://static.thenounproject.com/png/140738-200.png"
+          projectDescription="A single web page built solely using Material UI's library of premade components. Styles are given to a theme provider to customize the default styles."
         />
         <Project
           herokuLink="N"

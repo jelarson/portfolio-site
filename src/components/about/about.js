@@ -117,7 +117,7 @@ export default function About() {
       <div css={aboutContentCss}>
         <div css={contentSectionWrapperCss}>
           <h2>Bio:</h2>
-          My name is Jess E Larson. In my free time, I enjoy spending time with my beautiful wife and our 8 month old
+          My name is Jess E Larson. In my free time, I enjoy spending time with my beautiful wife and our 9 month old
           daughter. I also enjoy watching and talking about movies, sports, and of course coding. I hold a Bachelor
           degree in Business Management with a minor in Finance. In that field, I didn&apos;t always care for the
           environment. I had a friend who suggested I look into coding, and I have not looked back or had any regrets
